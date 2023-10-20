@@ -14,6 +14,8 @@ TEST(ComparatorTestSuite, UniqueFilesTest) {
   auto result = comparator.calculateSimilarities();
 
   // similarity of files is less then 20%
+  ASSERT_EQ(result.unique_in_dir1.size(), 1);
+  ASSERT_EQ(result.unique_in_dir2.size(), 1);
   ASSERT_EQ(result.unique_in_dir1[0], "../testing_directories/test_dir3/ccc");
   ASSERT_EQ(result.unique_in_dir2[0], "../testing_directories/test_dir4/ccc");
 }

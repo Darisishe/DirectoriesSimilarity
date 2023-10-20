@@ -1,0 +1,77 @@
+[
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -std=gnu++17 -o CMakeFiles/unit_tests_run.dir/src/distance/levenshtein.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -std=gnu++17 -o CMakeFiles/unit_tests_run.dir/tests/distance/unit.cpp.o -c \"/home/darisishe/Рабочий стол/contest/tests/distance/unit.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/tests/distance/unit.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -std=gnu++17 -o CMakeFiles/unit_tests_run.dir/src/directories_comparator.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -std=gnu++17 -o CMakeFiles/unit_tests_run.dir/tests/directories_comparator/unit.cpp.o -c \"/home/darisishe/Рабочий стол/contest/tests/directories_comparator/unit.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/tests/directories_comparator/unit.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -std=gnu++17 -o CMakeFiles/unit_tests_run.dir/src/file/file.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/file/file.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/file/file.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -std=gnu++17 -o CMakeFiles/unit_tests_run.dir/src/similarity_entry/entry.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\"    -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c \"/home/darisishe/Рабочий стол/contest/main.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/main.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\"    -std=gnu++17 -o CMakeFiles/main.dir/src/distance/levenshtein.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\"    -std=gnu++17 -o CMakeFiles/main.dir/src/file/file.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/file/file.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/file/file.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\"    -std=gnu++17 -o CMakeFiles/main.dir/src/directories_comparator.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\"    -std=gnu++17 -o CMakeFiles/main.dir/src/similarity_entry/entry.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests/tests/googletest/googlemock",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c \"/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock/src/gmock_main.cc\"",
+  "file": "/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests/tests/googletest/googlemock",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -I\"/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock/include\" -I\"/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c \"/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock/src/gmock-all.cc\"",
+  "file": "/home/darisishe/Рабочий стол/contest/tests/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests/tests/googletest/googletest",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -isystem \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/src/gtest_main.cc\"",
+  "file": "/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build_tests/tests/googletest/googletest",
+  "command": "/usr/bin/c++   -I\"/home/darisishe/Рабочий стол/contest/./src\" -I\"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/include\" -I\"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest\"    -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c \"/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/src/gtest-all.cc\"",
+  "file": "/home/darisishe/Рабочий стол/contest/tests/googletest/googletest/src/gtest-all.cc"
+}
+]

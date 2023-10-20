@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/distance/levenshtein.cpp.o CMakeFiles/main.dir/src/file/file.cpp.o CMakeFiles/main.dir/src/directories_comparator.cpp.o CMakeFiles/main.dir/src/similarity_entry/entry.cpp.o  -o main 
