@@ -11,7 +11,7 @@ class LevenshteinDistance : public IStringDistance {
 
 
  private:
-  int insertCost_ = 1;
-  int deleteCost_ = 1;
-  int replaceCost_ = 1;
+  int insert_cost_ = 1;
+  int delete_cost_ = 1;
+  int replace_cost_ = 1;
 };
