@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../src/directories_comparator.h
+similarity_entry/entry.h
+-
+distance/levenshtein.h
+-
+file/file.h
+-
+vector
+-
+
+../../src/distance/distance.h
+string
+-
+
+../../src/distance/levenshtein.h
+distance/distance.h
+-
+
+../../src/file/file.h
+string
+-
+
+../../src/similarity_entry/entry.h
+distance/distance.h
+../../src/similarity_entry/distance/distance.h
+file/file.h
+-
+
+/home/darisishe/Рабочий стол/contest/main.cpp
+distance/levenshtein.h
+/home/darisishe/Рабочий стол/contest/distance/levenshtein.h
+iostream
+-
+directories_comparator.h
+-
+
+/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp
+directories_comparator.h
+-
+filesystem
+-
+fstream
+-
+algorithm
+-
+
+/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp
+distance/levenshtein.h
+-
+vector
+-
+algorithm
+-
+
+/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp
+similarity_entry/entry.h
+-
+

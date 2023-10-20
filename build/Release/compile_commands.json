@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build/Release",
+  "command": "/usr/bin/g++   -I\"/home/darisishe/Рабочий стол/contest/./src\"  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c \"/home/darisishe/Рабочий стол/contest/main.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/main.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build/Release",
+  "command": "/usr/bin/g++   -I\"/home/darisishe/Рабочий стол/contest/./src\"  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/main.dir/src/distance/levenshtein.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/distance/levenshtein.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build/Release",
+  "command": "/usr/bin/g++   -I\"/home/darisishe/Рабочий стол/contest/./src\"  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/main.dir/src/file/file.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/file/file.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/file/file.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build/Release",
+  "command": "/usr/bin/g++   -I\"/home/darisishe/Рабочий стол/contest/./src\"  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/main.dir/src/directories_comparator.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/directories_comparator.cpp"
+},
+{
+  "directory": "/home/darisishe/Рабочий стол/contest/build/Release",
+  "command": "/usr/bin/g++   -I\"/home/darisishe/Рабочий стол/contest/./src\"  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/main.dir/src/similarity_entry/entry.cpp.o -c \"/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp\"",
+  "file": "/home/darisishe/Рабочий стол/contest/src/similarity_entry/entry.cpp"
+}
+]
