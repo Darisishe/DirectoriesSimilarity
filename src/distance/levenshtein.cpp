@@ -3,7 +3,7 @@
 #include <algorithm>
 
 LevenshteinDistance::LevenshteinDistance(int i, int d, int r)
-  : insertCost_(i), deleteCost_(d), replaceCost_(r) {
+  : insert_cost_(i), delete_cost_(d), replace_cost_(r) {
 }
 
 LevenshteinDistance::LevenshteinDistance() {
@@ -13,26 +13,27 @@ LevenshteinDistance::LevenshteinDistance() {
 double LevenshteinDistance::similarity(const std::string& first, const std::string& second) const { 
   size_t n = first.size();
   size_t m = second.size();
-  std::vector<std::vector<int>> distance(n + 1, std::vector<int>(m + 1)); 
-  distance[0][0] = 0;
- 
-  for (int j = 1; j <= m; ++j)
-    distance[0][j] = distance[0][j - 1] + insertCost_;
 
-  for (int i = 1; i <= n; ++i)
-    distance[i][0] = distance[i - 1][0] + deleteCost_;
+  std::vector<int> cur_distance(m + 1);
+  cur_distance[0] = 0;
+  for (int j = 1; j <= m; ++j)
+    cur_distance[j] = cur_distance[j - 1] + insert_cost_;
 
   for (int i = 1; i <= n; ++i) {
+     std::vector<int> prev_distance = cur_distance;
+     cur_distance[0] = prev_distance[0] + delete_cost_;
+
     for (int j = 1; j <= m; ++j) {
       if (first[i - 1] != second[j - 1]) {
-        distance[i][j] = std::min({distance[i - 1][j] + deleteCost_,
-                                  distance[i][j - 1] + insertCost_,
-                                  distance[i - 1][j - 1] + replaceCost_});
+        cur_distance[j] = std::min({prev_distance[j] + delete_cost_,
+                                    cur_distance[j - 1] + insert_cost_,
+                                    prev_distance[j - 1] + replace_cost_});
       } else {
-        distance[i][j] = distance[i - 1][j - 1];
+        cur_distance[j] = prev_distance[j - 1];
       }
-    }
+     }
   }
+
   
-  return 100 - 100 * static_cast<double>(distance[n][m]) / std::max(n, m); 
+  return 100 - 100 * static_cast<double>(cur_distance[m]) / std::max(n, m); 
 }
