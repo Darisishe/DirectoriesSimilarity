@@ -3,7 +3,6 @@
 #include <directories_comparator.h>
 
 int main() {
-  std::cout << LevenshteinDistance().similarity("aboba", "abob") << std::endl;
   std::string dir1, dir2;
   double percentage;
   std::cout << "Enter first directory: ";
