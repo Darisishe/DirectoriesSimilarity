@@ -8,6 +8,7 @@
 3) cmake ..
 4) cmake --build . --target unit_tests_run
 5) запустить unit_tests_run
+6) 
 (иначе ломаются относительные пути к тестовым директориям в юнит-тестах)
 # Структура проекта
 Для юнит-тестирования использовался googletest.
@@ -21,4 +22,6 @@ src/similarity_entry - вспомогательный класс для хран
 src/directories_comparator - сам компаратор директорий
 
 Использование компаратора:
-1) Определить метрику (Levenshein
+1) Определить метрику (LevenshteinDistance metric)
+2) DirectoriesComparator comparator(dir1, dir2, percentage, metric);
+3) comparator.calculateSimilarities() - результат работы
