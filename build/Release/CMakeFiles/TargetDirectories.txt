@@ -1,3 +1,0 @@
-/home/darisishe/Рабочий стол/contest/build/Release/CMakeFiles/rebuild_cache.dir
-/home/darisishe/Рабочий стол/contest/build/Release/CMakeFiles/edit_cache.dir
-/home/darisishe/Рабочий стол/contest/build/Release/CMakeFiles/main.dir

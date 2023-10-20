@@ -24,12 +24,12 @@ int main() {
     std::cout << entry.to_string() << "\n";
   }
 
-  std::cout << "Unique files in " + dir1 + ":\n";
+  std::cout << "\nUnique files in " + dir1 + ":\n";
   for (auto& file : info.unique_in_dir1) {
     std::cout << file << "\n";
   }
 
-  std::cout << "Unique files in " + dir2 + ":\n";
+  std::cout << "\nUnique files in " + dir2 + ":\n";
   for (auto& file : info.unique_in_dir2) {
     std::cout << file << "\n";
   }

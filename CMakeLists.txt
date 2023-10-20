@@ -16,18 +16,11 @@ add_executable(main ${MAIN_SOURCE_FILES})
 
 
 #unit testing:
-#add_subdirectory(tests/googletest)
+add_subdirectory(tests/googletest)
 
-#set(UNITS_SOURCE_FILES src/graph/graph.cpp tests/graph/unit.cpp)
-#add_executable(unit_tests_run ${UNITS_SOURCE_FILES})
-#target_link_libraries(unit_tests_run gtest gtest_main)
-
-
-#benchmarking:
-#add_subdirectory(tests/benchmark)
-
-#set(BENCHMARK_SOURCES src/graph/graph.cpp tests/graph/benchmark.cpp)
-#add_executable(benchmark_run ${BENCHMARK_SOURCES})
-#target_link_libraries(benchmark_run benchmark::benchmark benchmark::benchmark_main)
-
+set(UNITS_SOURCE_FILES src/distance/levenshtein tests/distance/unit.cpp
+                       src/directories_comparator.cpp tests/directories_comparator/unit.cpp
+                       src/file/file.cpp src/similarity_entry/entry.cpp)
+add_executable(unit_tests_run ${UNITS_SOURCE_FILES})
+target_link_libraries(unit_tests_run gtest gtest_main)
 

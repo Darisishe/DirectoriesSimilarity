@@ -4,6 +4,7 @@
 #include <file/file.h>
 #include <vector>
 
+
 // return value of calculateSimilarities:
 struct SimilarityInfo {
   std::vector<SimilarityEntry> similar;

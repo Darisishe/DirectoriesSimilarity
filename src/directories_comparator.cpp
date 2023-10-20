@@ -28,8 +28,8 @@ std::vector<File> DirectoriesComparator::readDirectory(const std::string& dir) {
 }
 
 SimilarityInfo DirectoriesComparator::calculateSimilarities()  {
-  std::vector<bool> is_unique_dir1(directory1_.size());
-  std::vector<bool> is_unique_dir2(directory2_.size());
+  std::vector<bool> is_unique_dir1(directory1_.size(), true);
+  std::vector<bool> is_unique_dir2(directory2_.size(), true);
 
   SimilarityInfo info;
 
