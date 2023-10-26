@@ -1,13 +1,13 @@
-#include <metric/LCS.h>
+#include "src/metric/levenshtein.h"
 #include <iostream>
+#include <metric/levenshtein.h>
+#include <metric/LCS.h>
 #include <directories_comparator.h>
 
 int main() {
   std::string dir1, dir2;
   double percentage;
 
-  LCSMetric metric;
-  std::cout << metric.similarity("ABA", "B");
   std::cout << "Enter first directory: ";
   std::cin >> dir1;
 
@@ -16,6 +16,10 @@ int main() {
 
   std::cout << "Enter percentage of similarity: ";
   std::cin >> percentage; 
+
+  // use LevenshteinMetric for better precision
+  // use LCSMetric for better performance time 
+  LCSMetric metric;
   DirectoriesComparator comparator(dir1, dir2, percentage, metric);
   SimilarityInfo info = comparator.calculateSimilarities();
   
@@ -34,4 +38,5 @@ int main() {
     std::cout << file << "\n";
   }
   
+  return 0;
 }

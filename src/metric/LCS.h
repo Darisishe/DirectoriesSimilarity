@@ -1,5 +1,7 @@
+#pragma once
 #include <metric/metric.h>
 #include <vector>
+
 
 // Metric based on longest common substring
 // Uses string hashes
