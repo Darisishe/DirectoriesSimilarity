@@ -1,6 +1,6 @@
 #pragma once
 #include <similarity_entry/entry.h>
-#include <distance/levenshtein.h>
+#include <metric/metric.h>
 #include <file/file.h>
 #include <vector>
 
@@ -14,7 +14,7 @@ struct SimilarityInfo {
 
 class DirectoriesComparator {
  public:
-  DirectoriesComparator(const std::string& dir1, const std::string& dir2, double percentage, const IStringDistance& metric);
+  DirectoriesComparator(const std::string& dir1, const std::string& dir2, double percentage, const IStringMetric& metric);
   
   SimilarityInfo calculateSimilarities();
 
@@ -22,7 +22,7 @@ class DirectoriesComparator {
   static std::vector<File> readDirectory(const std::string& dir);
 
  private:
-  const IStringDistance& metric_;
+  const IStringMetric& metric_;
   std::vector<File> directory1_;
   std::vector<File> directory2_;
   double percentage_;

@@ -1,16 +1,16 @@
-#include <distance/levenshtein.h>
+#include <metric/levenshtein.h>
 #include <vector>
 #include <algorithm>
 
-LevenshteinDistance::LevenshteinDistance(int i, int d, int r)
+LevenshteinMetric::LevenshteinMetric(int i, int d, int r)
   : insert_cost_(i), delete_cost_(d), replace_cost_(r) {
 }
 
-LevenshteinDistance::LevenshteinDistance() {
+LevenshteinMetric::LevenshteinMetric() {
 
 }
 
-double LevenshteinDistance::similarity(const std::string& first, const std::string& second) const { 
+double LevenshteinMetric::similarity(const std::string& first, const std::string& second) const { 
   size_t n = first.size();
   size_t m = second.size();
 

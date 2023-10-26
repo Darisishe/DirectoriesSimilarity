@@ -8,7 +8,8 @@ include_directories(./src)
 
 # main program: 
 set(MAIN_SOURCE_FILES main.cpp
-                      src/distance/levenshtein.cpp
+                      src/metric/levenshtein.cpp
+                      src/metric/LCS.cpp
                       src/file/file.cpp
                       src/directories_comparator.cpp
                       src/similarity_entry/entry.cpp)
@@ -18,7 +19,7 @@ add_executable(main ${MAIN_SOURCE_FILES})
 #unit testing:
 add_subdirectory(tests/googletest)
 
-set(UNITS_SOURCE_FILES src/distance/levenshtein tests/distance/unit.cpp
+set(UNITS_SOURCE_FILES src/metric/levenshtein.cpp src/metric/LCS.cpp tests/metric/unit.cpp
                        src/directories_comparator.cpp tests/directories_comparator/unit.cpp
                        src/file/file.cpp src/similarity_entry/entry.cpp)
 add_executable(unit_tests_run ${UNITS_SOURCE_FILES})

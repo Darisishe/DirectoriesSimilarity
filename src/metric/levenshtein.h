@@ -1,11 +1,11 @@
 #pragma once
-#include <distance/distance.h>
+#include <metric/metric.h>
 
 
-class LevenshteinDistance : public IStringDistance {
+class LevenshteinMetric : public IStringMetric {
  public:
-  LevenshteinDistance(int insertCost, int deleteCost, int replaceCost);
-  LevenshteinDistance();
+  LevenshteinMetric(int insertCost, int deleteCost, int replaceCost);
+  LevenshteinMetric();
 
   double similarity(const std::string& s1, const std::string& s2) const override;
 

@@ -3,7 +3,7 @@
 #include <fstream>
 #include <algorithm>
 
-DirectoriesComparator::DirectoriesComparator(const std::string& dir1, const std::string& dir2, double percentage, const IStringDistance& metric)
+DirectoriesComparator::DirectoriesComparator(const std::string& dir1, const std::string& dir2, double percentage, const IStringMetric& metric)
   : percentage_(percentage),
     metric_(metric),
     directory1_(readDirectory(dir1)),
