@@ -23,7 +23,7 @@ class DirectoriesComparator {
 
  private:
   const IStringMetric& metric_;
-  std::vector<File> directory1_;
-  std::vector<File> directory2_;
-  double percentage_;
+  const std::vector<File> directory1_;
+  const std::vector<File> directory2_;
+  const double percentage_;
 };

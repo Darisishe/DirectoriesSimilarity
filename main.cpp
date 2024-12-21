@@ -1,4 +1,3 @@
-#include "src/metric/levenshtein.h"
 #include <iostream>
 #include <metric/levenshtein.h>
 #include <metric/LCS.h>
@@ -20,6 +19,7 @@ int main() {
   // use LevenshteinMetric for better precision
   // use LCSMetric for better performance time 
   LCSMetric metric;
+  
   DirectoriesComparator comparator(dir1, dir2, percentage, metric);
   SimilarityInfo info = comparator.calculateSimilarities();
   
