@@ -1,27 +1,31 @@
-#include "metric/metric.h"
 #include <gtest/gtest.h>
-#include <directories_comparator.h>
+#include <directories_comparator.hpp>
 #include <metric/levenshtein.h>
 #include <metric/LCS.h>
+#include <metric/counting.h>
 
-static void equal_files_test(const IStringMetric& metric) {
-  DirectoriesComparator comparator("../testing_directories/test_dir1", "../testing_directories/test_dir2", 0, metric);
+template<typename Metric>
+static void equal_files_test() {
+  DirectoriesComparator<Metric> comparator("../testing_directories/test_dir1", "../testing_directories/test_dir2", 0);
   auto result = comparator.calculateSimilarities();
   ASSERT_EQ(result.similar[0].to_string(), "../testing_directories/test_dir1/aaa - ../testing_directories/test_dir2/bbb");
 }
 
 TEST(ComparatorTestSuite, EqualFilesTestLevenshtein) {
-  LevenshteinMetric metric;
-  equal_files_test(metric);
+  equal_files_test<LevenshteinMetric>();
 }
 
 TEST(ComparatorTestSuite, EqualFilesTestLCS) {
-  LCSMetric metric;
-  equal_files_test(metric);
+  equal_files_test<LCSMetric>();
 }
 
-static void unique_files_test(const IStringMetric& metric) {
-  DirectoriesComparator comparator("../testing_directories/test_dir3", "../testing_directories/test_dir4", 20, metric);
+TEST(ComparatorTestSuite, EqualFilesTestCounting) {
+  equal_files_test<CountingMetric>();
+}
+
+template<typename Metric>
+static void unique_files_test() {
+  DirectoriesComparator<Metric> comparator("../testing_directories/test_dir3", "../testing_directories/test_dir4", 20);
   auto result = comparator.calculateSimilarities();
 
   // similarity of files should be less then 20%
@@ -32,12 +36,14 @@ static void unique_files_test(const IStringMetric& metric) {
 }
 
 TEST(ComparatorTestSuite, UniqueFilesTestLevenshtein) {
-  LevenshteinMetric metric;
-  unique_files_test(metric);
+  unique_files_test<LevenshteinMetric>();
 }
 
 TEST(ComparatorTestSuite, UniqueFilesTestLCS) {
-  LCSMetric metric;
-  unique_files_test(metric);
+  unique_files_test<LCSMetric>();
+}
+
+TEST(ComparatorTestSuite, UniqueFilesTestCounting) {
+  unique_files_test<CountingMetric>();
 }
 

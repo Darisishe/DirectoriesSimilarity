@@ -1,13 +1,13 @@
 #pragma once
-#include <metric/metric.h>
+#include <string>
 
 
-class LevenshteinMetric : public IStringMetric {
+class LevenshteinMetric {
  public:
   LevenshteinMetric(int insertCost, int deleteCost, int replaceCost);
   LevenshteinMetric();
 
-  double similarity(const std::string& s1, const std::string& s2) const override;
+  double similarity(const std::string& s1, const std::string& s2) const; // returns percentage
 
 
  private:

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <metric/levenshtein.h>
 #include <metric/LCS.h>
-#include <directories_comparator.h>
+#include <metric/counting.h>
+#include <directories_comparator.hpp>
 
 int main() {
   std::string dir1, dir2;
@@ -16,11 +17,14 @@ int main() {
   std::cout << "Enter percentage of similarity: ";
   std::cin >> percentage; 
 
-  // use LevenshteinMetric for better precision
-  // use LCSMetric for better performance time 
-  LCSMetric metric;
+  // Use LevenshteinMetric for better precision
   
-  DirectoriesComparator comparator(dir1, dir2, percentage, metric);
+  // Use LCSMetric for better performance time 
+
+  // Use CountingMetric if you don't care much about precision (or ordering of symbols)
+  // and want to have a very good speed performance
+
+  DirectoriesComparator<CountingMetric> comparator(dir1, dir2, percentage);
   SimilarityInfo info = comparator.calculateSimilarities();
   
   std::cout << "\nSimilar files:\n";
